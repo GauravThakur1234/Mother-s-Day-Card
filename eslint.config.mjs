@@ -8,6 +8,7 @@ const __dirname = dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
+{/* eslint-disable-next-line react/no-unescaped-entities */}
 
 const eslintConfig = [...compat.extends("next/core-web-vitals")];
 

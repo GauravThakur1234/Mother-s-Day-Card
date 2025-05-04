@@ -126,7 +126,7 @@ export default function Home() {
     }, 3000);
     
     return () => clearInterval(interval);
-  }, []);
+  }, [features.length]);
   
   // Ambient background effects
   useEffect(() => {
@@ -140,7 +140,7 @@ export default function Home() {
     }, 5000);
     
     return () => clearInterval(interval);
-  }, [isOpen]);
+  }, [isOpen , features.length]);
   
   // Generate floating elements
   const FloatingElements = () => {
@@ -382,7 +382,7 @@ export default function Home() {
             </div>
             <h2 className="text-white font-serif text-3xl font-bold mb-3 drop-shadow-md">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-white animate-shimmer">
-                Happy Mother's Day
+                Happy Mother&#39;s Day
               </span>
             </h2>
             <p className="text-pink-100 text-lg">Tap to open your special card</p>
@@ -519,12 +519,12 @@ export default function Home() {
                 <div className="absolute -top-6 -left-2 -right-2 -bottom-2 border-2 border-yellow-200/30 rounded-lg transform rotate-1"></div>
                 
                 <h1 className="text-white font-serif text-5xl font-bold tracking-wide mb-3 relative">
-                  <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-white animate-shimmer">Happy Mother's Day</span>
-                  <span className="absolute -top-1 -left-1 text-pink-200/40 blur-sm">Happy Mother's Day</span>
+                  <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-white animate-shimmer">Happy Mother&#39;s Day</span>
+                  <span className="absolute -top-1 -left-1 text-pink-200/40 blur-sm">Happy Mother&#39;s Day</span>
                 </h1>
                 
                 <p className="text-pink-100 font-medium text-xl relative">
-                  To the world's most amazing mom
+                  To the world&#39;s most amazing mom
                   <span className="absolute -bottom-1 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-200/70 to-transparent"></span>
                 </p>
               </div>
@@ -635,20 +635,20 @@ export default function Home() {
                 <div className="relative">
                   <div className="absolute -left-1 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-pink-200 to-transparent"></div>
                   <p className="text-gray-700 leading-relaxed mb-4 pl-3">
-                    Your love is the greatest gift I've ever received. Your strength, 
+                    Your love is the greatest gift I&#39;ve ever received. Your strength, 
                     wisdom, and kindness have shaped who I am today. Your warm embrace
                     feels like home, and your smile brightens even the darkest days.
                   </p>
                 
                   <p className="text-gray-700 leading-relaxed mb-4 pl-3">
                     Thank you for your endless support, comforting hugs, and for 
-                    always believing in me when I couldn't believe in myself. You've 
-                    taught me how to face life's challenges with courage and grace.
+                    always believing in me when I couldn&#39;t believe in myself. You&#39;ve 
+                    taught me how to face life&#39;s challenges with courage and grace.
                   </p>
                   
                   <p className="text-gray-700 leading-relaxed mb-6 pl-3">
                     Today and every day, I celebrate the wonderful woman you are.
-                    The love you've given me has been my foundation and my inspiration.
+                    The love you&#39;ve given me has been my foundation and my inspiration.
                     You are truly extraordinary in every way.
                   </p>
                 </div>
@@ -684,7 +684,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">
                       <Music className="text-blue-400 mr-2" size={14} />
-                      <span>The beautiful memories we've created together</span>
+                      <span>The beautiful memories we&#39;ve created together</span>
                     </li>
                   </ul>
                 </div>
